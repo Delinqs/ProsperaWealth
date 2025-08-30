@@ -1,0 +1,49 @@
+[
+  {
+    "code": "SPECIAL2025",
+    "used": true,
+    "createdAt": "2025-06-01T12:32:44.448Z",
+    "usedAt": "2025-06-01T12:34:22.732Z"
+  },
+  {
+    "code": "GET75",
+    "used": false,
+    "createdAt": "2025-06-01T12:32:38.597Z"
+  },
+  {
+    "code": "NEWOFF",
+    "used": false,
+    "createdAt": "2025-06-01T12:32:34.602Z"
+  },
+  {
+    "code": "SPECIALOFF",
+    "used": false,
+    "createdAt": "2025-06-01T12:32:21.126Z"
+  },
+  {
+    "code": "WELCOME2025",
+    "used": true,
+    "createdAt": "2025-06-01T07:52:52.428Z",
+    "usedAt": "2025-06-01T07:53:52.800Z"
+  },
+  {
+    "code": "NEWUSER2025",
+    "used": false,
+    "createdAt": "2025-06-01T07:52:52.430Z"
+  },
+  {
+    "code": "STARTER50",
+    "used": false,
+    "createdAt": "2025-06-01T07:52:52.430Z"
+  },
+  {
+    "code": "FIRST100",
+    "used": false,
+    "createdAt": "2025-06-01T07:52:52.430Z"
+  },
+  {
+    "code": "BETA2025",
+    "used": false,
+    "createdAt": "2025-06-01T07:52:52.430Z"
+  }
+    ]
