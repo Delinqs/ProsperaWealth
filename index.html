@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ProsperaWealth - Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         * {
             margin: 0;
@@ -13,7 +14,7 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #dc3545;
+            background: #8A3EB2;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -53,7 +54,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #dc3545, #ff6b7a, #dc3545);
+            background: linear-gradient(90deg, #8A3EB2, #b56edc, #8A3EB2);
             border-radius: 20px 20px 0 0;
         }
         
@@ -63,7 +64,7 @@
         }
         
         .logo h1 {
-            background: linear-gradient(135deg, #dc3545, #b02a37);
+            background: linear-gradient(135deg, #8A3EB2, #6a2e8c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -92,6 +93,11 @@
             font-size: 0.875rem;
             letter-spacing: 0.025em;
         }
+
+        label i {
+            margin-right: 8px;
+            color: #8A3EB2;
+        }
         
         input[type="text"], input[type="email"], input[type="password"] {
             width: 100%;
@@ -107,9 +113,9 @@
         
         input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
             outline: none;
-            border-color: #dc3545;
+            border-color: #8A3EB2;
             background: white;
-            box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.1);
+            box-shadow: 0 0 0 4px rgba(138, 62, 178, 0.1);
             transform: translateY(-1px);
         }
         
@@ -138,7 +144,12 @@
         }
         
         .reward-info::before {
-            content: '💰';
+            content: '\U0001F4B0';
+            font-size: 1.2em;
+        }
+
+        .reward-info i {
+            color: #f59e0b;
             font-size: 1.2em;
         }
         
@@ -148,7 +159,7 @@
         }
         
         .coupon-link a {
-            color: #dc3545;
+            color: #8A3EB2;
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
@@ -157,7 +168,7 @@
         }
         
         .coupon-link a:hover {
-            color: #b02a37;
+            color: #6a2e8c;
         }
         
         .coupon-link a::after {
@@ -167,7 +178,7 @@
             height: 2px;
             bottom: -2px;
             left: 50%;
-            background: #dc3545;
+            background: #8A3EB2;
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
@@ -179,7 +190,7 @@
         .signup-btn {
             width: 100%;
             padding: 18px;
-            background: linear-gradient(135deg, #dc3545 0%, #b02a37 100%);
+            background: linear-gradient(135deg, #8A3EB2 0%, #6a2e8c 100%);
             color: white;
             border: none;
             border-radius: 12px;
@@ -205,7 +216,7 @@
         
         .signup-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(220, 53, 69, 0.4);
+            box-shadow: 0 15px 35px rgba(138, 62, 178, 0.4);
         }
         
         .signup-btn:hover::before {
@@ -258,8 +269,8 @@
         .spinner {
             width: 60px;
             height: 60px;
-            border: 4px solid rgba(220, 53, 69, 0.1);
-            border-top: 4px solid #dc3545;
+            border: 4px solid rgba(138, 62, 178, 0.1);
+            border-top: 4px solid #8A3EB2;
             border-radius: 50%;
             animation: spin 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
         }
@@ -350,31 +361,31 @@
         
         <form id="signupForm">
             <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+                <label for="username"><i class="fa fa-user"></i> Username</label>
+                <input type="text" id="username" name="username" required />
             </div>
             
             <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email"><i class="fa fa-envelope"></i> Email Address</label>
+                <input type="email" id="email" name="email" required />
             </div>
             
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required minlength="6">
+                <label for="password"><i class="fa fa-lock"></i> Password</label>
+                <input type="password" id="password" name="password" required minlength="6" />
             </div>
             
             <div class="form-group">
                 <label for="referralUsername">Referral Username <span class="optional">(Optional)</span></label>
-                <input type="text" id="referralUsername" name="referralUsername">
+                <input type="text" id="referralUsername" name="referralUsername" />
                 <div class="reward-info">
-                    Your referrer will earn ₦400 after your successful registration!
+                    <i class="fa fa-hand-holding-dollar"></i> Your referrer will earn ₦400 after your successful registration!
                 </div>
             </div>
             
             <div class="form-group">
-                <label for="couponCode">Coupon Code</label>
-                <input type="text" id="couponCode" name="couponCode" required>
+                <label for="couponCode"><i class="fa fa-gift"></i> Coupon Code</label>
+                <input type="text" id="couponCode" name="couponCode" required />
             </div>
             
             <div class="coupon-link">
@@ -566,4 +577,78 @@
                 if (!couponsData) return false;
                 
                 const coupons = couponsData.content;
-                const
+                const couponIndex = coupons.findIndex(c => c.code === couponCode);
+                if (couponIndex === -1) return false;
+                
+                coupons[couponIndex].used = true;
+                coupons[couponIndex].usedAt = new Date().toISOString();
+                
+                return await this.updateFile('coupon_codes.json', coupons, couponsData.sha);
+            }
+            
+            async handleSignup() {
+                this.showLoading(true);
+                this.showMessage('', 'error');
+                
+                const username = document.getElementById('username').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value;
+                const referralUsername = document.getElementById('referralUsername').value.trim();
+                const couponCode = document.getElementById('couponCode').value.trim();
+                
+                try {
+                    if (!username || !email || !password || !couponCode) {
+                        throw new Error('Please fill in all required fields.');
+                    }
+                    
+                    if (password.length < 6) {
+                        throw new Error('Password must be at least 6 characters long.');
+                    }
+                    
+                    await this.validateCoupon(couponCode);
+                    
+                    // Fetch database
+                    const dbData = await this.getDatabase();
+                    const users = dbData.content.users;
+                    
+                    if (users.find(u => u.username.toLowerCase() === username.toLowerCase())) {
+                        throw new Error('Username is already taken.');
+                    }
+                    
+                    if (users.find(u => u.email.toLowerCase() === email.toLowerCase())) {
+                        throw new Error('Email is already registered.');
+                    }
+                    
+                    // Add user
+                    users.push({
+                        username,
+                        email,
+                        password, // Note: In real apps, NEVER store plain passwords!
+                        referralUsername,
+                        couponCode,
+                        createdAt: new Date().toISOString()
+                    });
+                    
+                    // Update database
+                    const updateDbSuccess = await this.updateFile('database.json', dbData.content, dbData.sha);
+                    if (!updateDbSuccess) {
+                        throw new Error('Failed to save user data.');
+                    }
+                    
+                    // Mark coupon as used
+                    await this.markCouponAsUsed(couponCode);
+                    
+                    this.showMessage('Account created successfully!', 'success');
+                    document.getElementById('signupForm').reset();
+                } catch (error) {
+                    this.showMessage(error.message, 'error');
+                } finally {
+                    this.showLoading(false);
+                }
+            }
+        }
+        
+        new ProsperaWealthSignup();
+    </script>
+</body>
+</html>
